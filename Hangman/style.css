@@ -1,0 +1,138 @@
+*{padding:0;margin:0;}
+           
+.active,.navbar ul li a:hover{background-color:#210227}
+/*start navbar*/
+.navbar{
+    overflow:hidden;
+    background-color:#440050;
+    position:sticky;
+    top:0;
+}
+.navbar ul{
+    list-style:none;
+    float:left;
+    width:80%;
+}
+.navbar li{
+    float:left;
+}
+.navbar ul li a{
+    padding:15px 25px;
+    color:#fff;
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+}
+
+
+html{
+    background:mistyrose;
+    padding: 0 30px;
+}
+#word{
+    font-size:50px;
+    margin-bottom:100px;
+}
+#word span{
+    width: 40px;
+    display:inline-block;
+    text-align:center;
+}
+#word span.missing{
+    color:#ECE26F;
+}
+#lives{
+    height:40px;
+    margin:20px 0;
+    background:url('img/heart.png') top left repeat;
+    background-size:auto 100%;
+}
+#buttons button{
+    font-size:40px;
+    border:1px solid #A3A122;
+    background-color:#D5D344;
+    box-shadow:0 3px 5px 0 rgba(0,0,0,0.4);
+    border-radius:5%;
+    height:50px;
+    width:70px;
+    margin:5px;
+    cursor:pointer;
+    outline:0;
+    color:mistyrose;
+}
+#buttons button:hover{
+    /*box-shadow:0 1px 5px 0 rgba(0,0,0,0.4);*/
+    background-color:mistyrose;
+    color:#D5D344;
+
+}
+#buttons button:active{
+    box-shadow:inset 0 0 5px 0 rgba(0,0,0,0.4);
+}
+#buttons button.disabled, #buttons button.disabled:hover, #buttons button.disabled:active{
+    background-color:mistyrose;
+    color:#D5D344;
+    box-shadow:inset 0 0 5px 0 rgba(0,0,0,0.4);
+    cursor:default;
+}
+button#next{
+    font-size:80px;
+    border:1px solid #1B5C75;
+    background-color:#2D90B7;
+    box-shadow:0 3px 5px 0 rgba(0,0,0,0.4);
+    border-radius:5px;
+    margin:5px;
+    cursor:pointer;
+    outline:0;
+    color:mistyrose;
+    margin:50px auto 0;
+    display:none;
+}
+button#next:hover{
+    background:#EAF0F2;
+    color:#2D90B7;
+}
+
+html.gameOver{
+    background:#B72D2D;
+}
+html.gameOver button#next, html.finished button#next{
+    display:block;
+}
+html.finished{
+    background:#47C177;
+}
+#time{
+    color:#000;
+    font-size:40px;
+    font-weight:bold;
+    width:350px;
+    height:260px;
+    float:right;
+    text-align:center;
+    padding:10px;
+}
+#startpage{
+    width:100%;
+    height:100%;
+    background-color:#222;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#start{
+    padding:10px 50px;
+    position:absolute;
+    top:250px;
+    left:500px;
+    color:#fff;
+    background-color:#440050;
+    border:none;
+    font-size:30px;
+    font-weight:bold;
+}
+#result{
+    color:#fff;
+    font-size:50px;
+    text-align:center;
+}
